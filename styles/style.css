@@ -1,0 +1,123 @@
+:root{
+    --background-color-main: #5243F4;
+    --text-color-main: #fff;
+}
+*{
+    margin:0;
+    padding:0;
+}
+/*
+@font-face{
+    font-family: 'Steppe-Book';
+    src: url('../fonts/Steppe-Book.ttf');
+}
+@font-face{
+    font-family: 'Steppe-ExtraBold';
+    src: url('../fonts/Steppe-ExtraBold.ttf');
+}
+*/
+body{
+    background-color: var(--background-color-main);
+    font-family: 'Steppe-Book', sans-serif;
+    color:var(--text-color-main);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.button{
+    box-sizing: border-box;
+    border: none;
+    width: 178px;
+    height: 58px;
+    border-radius: 60px;
+    font-size: 18px;
+    padding: 18px;
+    font-family: 'Steppe-Book', sans-serif;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--text-color-main);
+    color: var(--background-color-main);
+}
+
+.header{
+    padding: 40px 0;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    vertical-align: bottom;
+}
+
+.menu{
+    margin-left: 250px;
+}
+
+.menu-list{
+    list-style: none;
+    display: flex;
+    gap:50px;
+}
+
+.menu-item a{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color-main);
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+.menu-item a:hover{
+    transform: scale(1.2);
+}
+/*
+.menu-item a:hover{
+    border-bottom: 2px solid var(--text-color-main);
+
+}*/
+
+.main-content{
+    padding-top:161px;
+    padding-bottom: 200px;
+}
+
+.main-info{
+    max-width: 811px;
+}
+.main-title{
+    font-family: 'Steppe-Extrabold', sans-serif;
+    font-size: 90px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+.main-text{
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+.main-action .button{
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.main-action .button:hover{
+    transform: scale(1.1);
+}
+
+.main-image{
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: -1;
+}

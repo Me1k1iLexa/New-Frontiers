@@ -5,23 +5,48 @@
     <meta charset="UTF-8">
     <title>New Frontiers</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/fonts-preload.js"></script>
 </head>
 
 <body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="content/logo.png" alt="логотип">
+        </div>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="https://example.com">Каталог</a>
+                </li>
+                <li class="menu-item">
+                    <a href="https://example.com">О нас</a>
+                </li>
+                <li class="menu-item">
+                    <a href="https://example.com">Оформление заказа</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <h1>Первый заголовок</h1>
-
-    <p>Абзац</p>
-
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-    </ul>
-
-    <a href="https://example.com"></a>
-
-    <script src="scripts/script.js"></script>
+<section class="main-content">
+    <div class="container">
+        <div class="main-info">
+            <h1 class="main-title">Магия вкуса в каждой крошке</h1>
+            <p class="main-text">Наши рецепты вдыхают жизнь в изысканность ингредиентов: ароматное натуральное масло,
+                свежие сливки, чистый мёд и отборная мука. Мы тщательно отбираем каждый компонент премиального печенья,
+                стремясь подарить вам истинное кулинарное наслаждение.
+            </p>
+            <div class="main-action">
+                <button class="button">
+                Заказать
+                </button>
+            </div>
+        </div>
+        <img src="content/cookie.png" alt="печенька" class="main-image">
+    </div>
+</section>
+<script src="scripts/script.js"></script>
 </body>
 </html>
