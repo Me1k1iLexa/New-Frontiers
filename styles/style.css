@@ -1,6 +1,8 @@
 :root{
     --background-color-main: #5243F4;
     --text-color-main: #fff;
+    --text-color-alt: #5243F4;
+    --text-color-alt2: #5D3427;
 }
 *{
     margin:0;
@@ -41,7 +43,7 @@ body{
     outline: none;
     cursor: pointer;
     background-color: var(--text-color-main);
-    color: var(--background-color-main);
+    color: var(--text-color-alt);
 }
 
 .header{
@@ -125,4 +127,79 @@ body{
 .products{
     padding:100px 0;
 }
-
+.common-title{
+    font-family: 'Steppe-Extrabold', sans-serif;
+    font-size: 60px;
+    line-height: 100%;
+    width: 575px;
+    height:60px;
+    text-align: center;
+    margin: 0 auto;
+}
+.products-items{
+    display: grid;
+    margin:100px auto;
+    grid-template-columns: repeat(3, 384px);
+    grid-template-rows: repeat(2, 550px);
+    grid-column-gap: 24px;
+    grid-row-gap: 20px;
+}
+.products-item{
+    padding:24px;
+    background: linear-gradient(
+            to bottom,
+            var(--background-color-main) 0px,
+            var(--background-color-main) 70px,
+            var(--text-color-main) 70px,
+            var(--text-color-main) 550px
+    );
+}
+.products-item-image{
+    margin-left:-24px;
+    margin-top:-24px;
+}
+.products-item-details{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.products-item-title{
+    font-family: 'Steppe-Extrabold', sans-serif;
+    font-size: 18px;
+    color: var(--text-color-alt2);
+}
+.product-item-text{
+    font-size: 14px;
+    line-height: 120%;
+    width: 336px;
+    height: 110px;
+    color: var(--text-color-alt2);
+}
+.products-item-extra{
+    display: flex;
+}
+.products-item-info{
+    display:inline-block;
+    width:84px;
+    height:55px;
+    gap:10px;
+}
+.products-item-price{
+    font-family: 'Steppe-Extrabold', sans-serif;
+    font-size: 24px;
+    color: var(--text-color-alt);
+}
+.products-item-weight{
+    font-size: 12px;
+    color: var(--text-color-alt2);
+}
+.violet-button{
+    background-color: var(--text-color-alt);
+    color: var(--text-color-main);
+    margin-left: 72px;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+.violet-button:hover{
+    transform: scale(1.1);
+}
