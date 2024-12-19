@@ -1,5 +1,6 @@
 :root{
     --background-color-main: #5243F4;
+    --background-color-main-light: #FAFAFA;
     --text-color-main: #fff;
     --text-color-alt: #5243F4;
     --text-color-alt2: #5D3427;
@@ -8,16 +9,6 @@
     margin:0;
     padding:0;
 }
-/*
-@font-face{
-    font-family: 'Steppe-Book';
-    src: url('../fonts/Steppe-Book.ttf');
-}
-@font-face{
-    font-family: 'Steppe-ExtraBold';
-    src: url('../fonts/Steppe-ExtraBold.ttf');
-}
-*/
 body{
     background-color: var(--background-color-main);
     font-family: 'Steppe-Book', sans-serif;
@@ -82,12 +73,6 @@ body{
 .menu-item a:hover{
     transform: scale(1.2);
 }
-/*
-.menu-item a:hover{
-    border-bottom: 2px solid var(--text-color-main);
-
-}*/
-
 .main-content{
     padding-top:161px;
     padding-bottom: 200px;
@@ -131,7 +116,7 @@ body{
     font-family: 'Steppe-Extrabold', sans-serif;
     font-size: 60px;
     line-height: 100%;
-    width: 575px;
+    width: 611px;
     height:60px;
     text-align: center;
     margin: 0 auto;
@@ -150,8 +135,8 @@ body{
             to bottom,
             var(--background-color-main) 0px,
             var(--background-color-main) 70px,
-            var(--text-color-main) 70px,
-            var(--text-color-main) 550px
+            var(--background-color-main-light) 70px,
+            var(--background-color-main-light) 550px
     );
 }
 .products-item-image{
@@ -203,3 +188,90 @@ body{
 .violet-button:hover{
     transform: scale(1.1);
 }
+.history-items{
+    display:flex;
+    gap:20px;
+    margin-bottom: 147px;
+}
+.history-item{
+    display:flex;
+    box-sizing: border-box;
+    width:590px;
+    height:453px;
+    gap:20px;
+    align-items: center;
+    flex-direction: column;
+    padding: 110px 80px;
+    background-color: var(--background-color-main-light);
+}
+.history-item-title{
+    font-family: 'Steppe-Extrabold', sans-serif;
+    font-size: 24px;
+    line-height: 110%;
+    color: var(--text-color-alt2);
+}
+.history-item-text{
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--text-color-alt2);
+}
+.history-images{
+    width:590px;
+    height:453px;
+}
+.order-content{
+    display: flex;
+    gap:20px;
+    box-sizing: border-box;
+    width:1200px;
+    height:525px;
+    padding: 40px 200px;
+    margin:103px auto;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(50%);
+}
+.order-items{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.order-text{
+    font-family: 'Steppe-Extrabold', sans-serif;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--text-color-main);
+    width:387px;
+    height:92px;
+}
+.order-select, .order-input{
+    box-sizing: border-box;
+    width:390px;
+    height:70px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 60px;
+    font-family: 'Steppe-Book', sans-serif;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    color: var(--text-color-main);
+    transition: all 0.3s ease;
+    padding: 0 20px;
+}
+.order-select{
+    text-align: center;
+}
+.order-select:focus, .order-input:focus{
+    border-color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.2);
+}
+.order-select::placeholder, .order-input::placeholder{
+    color:rgba(255, 255, 255, 0.5);
+}
+.image-for-order{
+    width:590px;
+    height:auto;
+}
+.order-image{
+    position: absolute;
+}
+
