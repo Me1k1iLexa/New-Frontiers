@@ -267,11 +267,44 @@ body{
 .order-select::placeholder, .order-input::placeholder{
     color:rgba(255, 255, 255, 0.5);
 }
+.button-order{
+    width:390px;
+    height:70px;
+    background-color: var(--background-color-main);
+    color: var(--text-color-main);
+    will-change: transform;
+    transition: transform 0.5s ease;
+}
+.button-order:hover{
+    transform: scale(1.1);
+}
 .image-for-order{
     width:590px;
     height:auto;
+    display: flex;
+    align-items: center;
 }
 .order-image{
-    position: absolute;
+    position: relative;
+    left:100px;
+    top:-30px;
 }
-
+.footer{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    height: 240px;
+    padding-top: 140px;
+    align-items: center;
+    gap:14px;
+}
+.logo-footer{
+    width:151px;
+    height:20px;
+}
+.footer-text{
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--text-color-main);
+}
